@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Basic route
 app.get("/", (req, res) => {
-  res.send("TalkBoard server running 🚀");
+  res.send("TalkBoardAuth server running 🚀");
 });
 
 // Start server
