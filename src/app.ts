@@ -1,4 +1,4 @@
-import express from "express";
+import express from 'express';
 
 const app = express();
 const PORT = 3000;
@@ -7,8 +7,8 @@ const PORT = 3000;
 app.use(express.json());
 
 // Basic route
-app.get("/", (req, res) => {
-  res.send("TalkBoardAuth server running 🚀");
+app.get('/', (req, res) => {
+  res.send('TalkBoardAuth server running 🚀');
 });
 
 // Start server
