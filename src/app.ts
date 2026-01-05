@@ -1,5 +1,5 @@
 import express from 'express';
-import routes from './routes/user.routes.js';
+import userRoutes from './routes/user.routes.js';
 
 const app = express();
 
@@ -7,6 +7,6 @@ const app = express();
 app.use(express.json());
 
 // Basic route
-app.use('/api/v1', routes);
+app.use('/api/v1/user', userRoutes);
 
 export { app };
