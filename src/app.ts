@@ -1,4 +1,5 @@
 import express from 'express';
+import routes from './routes/user.routes.js';
 
 const app = express();
 
@@ -6,8 +7,6 @@ const app = express();
 app.use(express.json());
 
 // Basic route
-app.get('/', (req, res) => {
-  res.send('TalkBoardAuth server running 🚀');
-});
+app.use('/api/v1', routes);
 
 export { app };
